@@ -40,7 +40,7 @@ namespace ReferenceTypes
 
             string[] stringArray = { "Hello", "World!", "Why", "is it", "always", stringExample };
             string[] differentStringArray = { "some", "word" };
-            // use 2 to get thirdItem because 0index
+            // use 2 to get thirdItem because 0-index (0 is first item)
             string thirdItem = stringArray[2];
             Console.WriteLine(thirdItem);
             differentStringArray[1] = "idk";

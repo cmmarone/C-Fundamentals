@@ -63,7 +63,9 @@ namespace ValueTypes
             Console.WriteLine(1.2578907289045789789789789787897m);
         }
 
-        enum PastryType { Cake, Cupcake, Eclair, Petitfour, Croissant}
+
+        //An enum is a special "class" that represents a group of constants (unchangeable/read-only variables).
+        enum PastryType { Cake, Cupcake, Eclair, Petitfour, Croissant} //yeah it's in the right place
         [TestMethod]
         public void Enums()
         {
