@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceClasses", "InheritanceClasses\InheritanceClasses.csproj", "{FCC0FB91-B049-4C98-97B9-CAA98167D5D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern", "RepositoryPattern\RepositoryPattern.csproj", "{BC1BE9AC-02BB-43CC-A7CA-21A64545DBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingContentRepositoryTest", "StreamingContentRepositoryTest\StreamingContentRepositoryTest.csproj", "{5C6341BC-C903-4844-B5B2-8011D73C4ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{FCC0FB91-B049-4C98-97B9-CAA98167D5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC0FB91-B049-4C98-97B9-CAA98167D5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC0FB91-B049-4C98-97B9-CAA98167D5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1BE9AC-02BB-43CC-A7CA-21A64545DBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1BE9AC-02BB-43CC-A7CA-21A64545DBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1BE9AC-02BB-43CC-A7CA-21A64545DBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1BE9AC-02BB-43CC-A7CA-21A64545DBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6341BC-C903-4844-B5B2-8011D73C4ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6341BC-C903-4844-B5B2-8011D73C4ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6341BC-C903-4844-B5B2-8011D73C4ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6341BC-C903-4844-B5B2-8011D73C4ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
