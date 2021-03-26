@@ -17,11 +17,11 @@ namespace StreamingContent_Inheritance
         {
 
         }
-
+                                                                                                                   
         public Movie(string title, string description, MaturityRating maturityRating, GenreType genreType, double starRating, double runTime)
-            :base(title,description,maturityRating,genreType,starRating)  //just refer to the base class and use those values
+            :base(title,description,maturityRating,genreType,starRating)  //just refer to the base class and link up those properties
         {
-            RunTime = runTime;
+            RunTime = runTime; //here's the one new property that we added to Movie, it's already defined as a constructor parameter, now we just build it by equating to the prop
         }
     }
 }

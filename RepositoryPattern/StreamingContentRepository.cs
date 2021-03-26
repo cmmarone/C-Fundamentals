@@ -9,11 +9,11 @@ namespace RepositoryPattern
 //When we create some StreamingContent objects later, we will be able to use this method to add it to our directory.
 
 
-//YO, think of the word 'content' that adam's code uses a lot, more like 'search'???
+
 
 {
     public class StreamingContentRepository
-    {                                              //_contentDIrectory is a field, which is an instance of the class StreamingContent
+    {                                              //_contentDIrectory is a field
         protected readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
 
         //create
@@ -53,14 +53,14 @@ namespace RepositoryPattern
         public List<StreamingContent> GetContentByStarRating(double starRating)
         {
             List<StreamingContent> starRatingResults = new List<StreamingContent>();
-
+           
             foreach (StreamingContent content in _contentDirectory)
             {
                 if (content.StarRating == starRating)
                 {
                     starRatingResults.Add(content);
                 }
-
+            
             }
             return starRatingResults;
         }

@@ -52,6 +52,8 @@
     <Compile Include="W1D3_ConditionsAndLoops.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="W1D5_ClassAndProperties.cs" />
+    <Compile Include="W2D2_Calculator.cs" />
+    <Compile Include="W2D2_InClassCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

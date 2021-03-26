@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StreamingContent_Inheritance
 {
-    protected class StreamingRepository : StreamingContentRepository
+    public class StreamingRepository : StreamingContentRepository
     {
         //we will use the same _contentDirectory from StreamingContentRepository.cs 
 
@@ -84,37 +84,72 @@ namespace StreamingContent_Inheritance
 
 
         //challenge - get show by avg run time
-        public Show GetShowByAvgRunTime(double averageRunTime)
+        public List<Show> GetShowByAvgRunTime(double averageRunTime)
         {
-            //To find a specific show
-            foreach (StreamingContent content in _contentDirectory)
+            List<Show> listOfShows = new List<Show>();
+            foreach (Show content in _contentDirectory)
             {
-                if (content.AverageRunTime == averageRunTime && content.GetType() == typeof(Show))
+                if (content.AverageRunTime == averageRunTime)
                 {
-                    return (Show)content;
-
+                    listOfShows.Add(content);
                 }
 
             }
-            return null;
+            return listOfShows;
         }
 
-        //challenge - get movie by run time
 
-        public Movie GetShowByAvgRunTime(double runTime)
+
+
+
+
+
+
+        //trying challenge - get movie by run time
+        public List<Movie> GetMovieByRunTime(double runTime)
         {
-            //To find a specific show
-            foreach (StreamingContent content in _contentDirectory)
+            List<Movie> listOfMovies = new List<Movie>();
+            foreach (Movie content in _contentDirectory)
             {
-                if (content.RunTime == runTime && content.GetType() == typeof(Movie))
+                if (content.RunTime == runTime)
                 {
-                    return (Movie)content;
-
+                    listOfMovies.Add(content);
                 }
 
             }
-            return null;
+            return listOfMovies;
+        }
+
+
+
+
+
+        //get shows by star rating
+
+        public List<Show> GetShowByStarRating(double starRating)
+        {
+            List<Show> listOfShows = new List<Show>();
+            foreach (Show content in _contentDirectory)
+            {
+                if (content.StarRating == starRating)
+                {
+                    listOfShows.Add(content);
+                }
+
+            }
+            return listOfShows;
+
+
+
+
+
+
+
+
+
+
 
 
         }
+    }
 }
